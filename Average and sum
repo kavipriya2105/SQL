@@ -1,0 +1,42 @@
+-- create a table
+CREATE TABLE students(
+   id INT,
+   name varchar(20),
+   age INT,
+   major varchar(20)
+ );
+INSERT INTO students (id,name,age,major)
+VALUES (1,'Kiruba',19,'Electronics'),
+       (2,'Kavinvarsha',18,'Electronics'),
+       (3,'Kousalya',20,'Biology'),
+       (4,'Loganayaki',29,'Mathematics'),
+       (5,'Madhumitha',30,'Electronics'),
+       (6,'Niranchanaa',19,'History'),
+       (7,'Kavipriya',24,'Electronics'),
+       (8,'Priya',18,'History'),
+       (9,'Akalya',16,'Mathematics'),
+       (10,'Priyadharshini',23,'Biology');
+ALTER TABLE students ADD COLUMN marks;
+UPDATE students
+SET marks=98 WHERE id=1;
+UPDATE students
+SET marks=95 WHERE id=2;
+UPDATE students
+SET marks=87 WHERE id=3;
+UPDATE students
+SET marks=96 WHERE id=4;
+UPDATE students
+SET marks=89 WHERE id=5;
+UPDATE students
+SET marks=91 WHERE id=6;
+UPDATE students
+SET marks=75 WHERE id=7;
+UPDATE students
+SET marks=78 WHERE id=8;
+UPDATE students
+SET marks=99 WHERE id=9;
+UPDATE students
+SET marks=95 WHERE id=10;
+
+SELECT SUM(marks) FROM students;
+SELECT AVG(marks) FROM students;
