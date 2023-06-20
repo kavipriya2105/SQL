@@ -1,0 +1,20 @@
+-- create a table
+CREATE TABLE students(
+   id INT,
+   name varchar(20),
+   age INT,
+   major varchar(20)
+ );
+INSERT INTO students (id,name,age,major)
+VALUES (1,'Kiruba',19,'Electronics'),
+       (2,'Kavinvarsha',18,'Electronics'),
+       (3,'Kousalya',20,'Biology'),
+       (4,'Hemalatha',29,'Mathematics'),
+       (5,'Madhumitha',30,'Electronics'),
+       (6,'Santhosh',19,'History'),
+       (7,'Kavipriya',24,'Electronics'),
+       (8,'Priyadharshini',18,'History'),
+       (9,'Anitha',16,'Mathematics'),
+       (10,'Dhanushmathi',23,'Biology');
+SELECT * FROM students ORDER BY age ASC;
+SELECT * FROM students ORDER BY age DESC;
